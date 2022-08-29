@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--  配置 bean  -->
+    <!-- property 表示配置当前 Bean 的属性
+         name 表示配置哪一个具体的属性
+         ref 表示参照的 Bean
+         -->
+    <bean id="DriverDao" class="com.wzw.dao.DriverDaoImpl"/>
+    <bean id="DriverService" class="com.wzw.service.DriverServiceImpl"/>
+    <bean id="VehicleDao" class="com.wzw.dao.VehicleDaoImpl"/>
+    <bean id="VehicleService" class="com.wzw.service.VehicleServiceImpl"/>
+
+</beans>
